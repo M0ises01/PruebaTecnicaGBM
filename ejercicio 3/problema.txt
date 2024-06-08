@@ -1,0 +1,32 @@
+2. Te encuentras en el eje OX en el punto 0 y quieres moverte a un punto entero x > 0. Puedes dar varios
+saltos. Supongamos que actualmente estás en el punto y (y puede ser negativo) y das el salto k-ésimo.
+a. Puedes:
+i. saltar al punto y+k o
+ii. saltar al punto y-1.
+¿Cuál es el número mínimo de saltos que necesitas para alcanzar el punto x?
+Input
+La primera línea contiene un único número entero t (1≤t≤1000): el número de casos de prueba.
+La primera y única línea de cada caso de prueba contiene un único número entero x (1≤x≤106): el punto de
+destino.
+Output
+Para cada caso de prueba, imprime el único número entero - el número mínimo de saltos para
+llegar a x. Se puede demostrar que podemos llegar a cualquier punto entero x.
+
+input : 1 2 3 4 5
+output : 1 3 2 3 4
+
+Note:
+En el primer caso de prueba x = 1, por lo que sólo se necesita un salto: el salto 1 de 0 a 0 + 1 = 1
+En el segundo caso de prueba x = 2. Necesita al menos tres saltos:
+El 1er salto de 0 a 0 + 1 = 1
+El 2o salto de 1 a 1 + 2 = 3
+El 3er salto de 3 a 3 - 1 = 2
+Dos saltos no son suficientes porque son las únicas variantes posibles: El salto 1 como -1 y el 2 como -1,
+llegarás a 0 - 1 - 1 = -2 El salto 1 como -1 y el 2 como +2, llegarás a 0 - 1 + 2 = 1 El salto 1 como -1 y el 2
+como -1, llegarás a 0 - 1 - 1 = 0
+El primer salto como -1 y el segundo como +2, llegarás a 0 - 1 + 2 = 3
+En el tercer caso, necesitas dos saltos: el primero como +1 y el segundo como +2, por lo que 0+1+2=3.
+En el cuarto caso de prueba, necesitas tres saltos: el 1o como -1, el 2o como +2 y el 3o como +3, así que 0 - 1
++ +2 +3 = 4
+
+● Punto extra - 5 pruebas unitarias.
